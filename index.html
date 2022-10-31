@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mainpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://vtxicons.vercel.app/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <div>
+                                            <!--Header-->
+            <header class="header">
+                <div class="header-1">
+                    <a href="#"><img src="img/logo.png" alt="Pizza Hut" height="50px"></a>
+                </div>
+                <div class="header-2">
+                    <i id="bell" class="far fa-bell"></i>
+                </div>
+                <div class="header-3">
+                    <div>
+                        <button><span>EN</span></button>
+                    </div>
+                    <div class="member" onclick="openlogin()"><button>
+                        <div><i id="alt" class="fa-solid fa-user red"></i></div>
+                        <div><span>Thành viên</span></div>
+                    </button>
+                    </div>
+                </div>
+                <div class="header-4">
+                    <button>
+                        <img src="img/track_your_order.svg" alt="">
+                        <span>Theo Dõi Đơn Hàng</span>
+                    </button>
+
+                </div>
+            </header>
+                                                   <!--Login-->
+            <div class="login-dk" id="login">
+                <div class="login-item-dk">
+                    <div class="login-item">
+                        <img class="login-img" src="img/VN-1548x1557.jpg" height="480px"/>
+                        <form class="login-r">
+                            <p class="close" style="cursor:pointer;" onclick="closelogin()"><img src="img/close.png" alt="" height="25px" width="30px"></p>
+                            <div class="login-text">
+                            <h1 style="color: #cb1c3b;">🍕🍕 WELCOME BACK!</h1>
+                            <p>BẠN ĐÃ LÀ THÀNH VIÊN HUT REWARDS! ĐĂNG NHẬP 
+                                <br>
+                                TRƯỚC KHI THANH TOÁN ĐỂ TÍCH ĐIỂM – ĐỔI PIZZA NHÉ!
+                            </p>
+                            </div>
+                            <div class="login-input">
+                            <label for="first-name">Email*
+                                <br><input style="font-size: 30px; margin-bottom: 20px; " type="text"required /></label>
+                                <br>
+                            <label class="login-password" for="last-name">Mật khẩu *
+                                <br><input style="font-size: 30px;"id="last-name"  type="text" required /></label>
+
+                        </form>
+                        <div class="login-a">
+                            <div  class="left">
+                                <label for="">
+                                    <input type="checkbox">
+                                    <span>Lưu mật khẩu</span>
+                                </label>
+                            </div>
+                            <div  class="right">
+                                <a  href="">Quên mật khẩu?</a>
+                            </div>
+                        </div>
+                        <button class="login-btn">ĐĂNG NHẬP</button>
+                        <div class="bottom">
+                            <span>
+                            Bạn chưa có tài khoản? <a href="">Đăng ký ngay</a>  hoặc tìm hiểu thêm về <a href="">Điều khoản và Quyền lợi Thành viên</a> 
+
+                            </span>
+                        </div>
+                    </div>
+                    </div>
+        
+                </div>
+            </div>
+                                                      <!--khac-->
+            <div>
+                <a href=""><img style="margin-top: 60px;" src="img/banner.jpg" alt="" width="100%"></a>
+            </div>
+            <div >
+                <div class="form" style="transform: translateY(-80px); text-align: center;">
+                    <div style="display: flex; width:100%; ">
+                        <button class="tab" onclick="change(true)" ><img src="img/1.1.gif" alt=""><span> Giao hàng tận nơi </span></button>
+                        <button class="tab" onclick="change(false)"><img src="img/1.2.png" alt="" height="28px">Mua mang về</button>
+                    </div> 
+                    <div id="tab-content">
+                        <input class="tab-input" placeholder="Vui lòng cho chúng tôi biết vị trí của bạn" style="width:80%;border-radius: 4px; border: 1px solid green;"/>
+                        <i class="fa-regular fa-map fa-lg"></i>
+            
+                    </div>
+                </div>
+            </div>
+            <section class="sec-2">
+                <div class="header-sec-2">
+                    <div class="line"></div>
+                    <h1 class="header-sec-2-text">KHUYẾN MÃI</h1>
+                    <div class="line"></div>
+                </div>
+                <div class="list-img-sec-2">
+                    <a href="Menu Order/Index.html"><img src="img/sec1.jpg" /></a>
+                    <a href="Menu Order/Index.html"><img src="img/sec2.jpg" /></a>
+                </div>
+                <a href="Menu Order/Index.html"><button class="button-sec-2">  Xem menu </button></a>
+            </section>
+            <footer>
+                <div class="list-1">
+                    <div class="footer-item">
+                        <h3 class="text-1">MENU</h3>
+                        <a class="text" href="Menu Order/Index.html">Mua 1 được 3</p></a>
+                        <a class="text" href="Menu Order/Index.html">Kids Box</p></a>
+                        <a class="text" href="Menu Order/Index.html">My Box</p></a>
+                        <a class="text" href="Menu Order/Index.html">LIMO & COMBO</p></a>
+                        <a class="text" href="Menu Order/Index.html">Pizza</p></a>
+                    </div>
+                    <div class="footer-item">
+        
+                        <h3 class="text-1">VỀ CHÚNG TÔI</h3>
+                        <a class="text" href="Giới thiệu/index.html">Giới Thiệu</p></a>
+                        <a class="text" href="">Tầm Nhìn Của Chúng Tôi</p></a>
+                        <a class="text" href="">Giá Trị Cốt Lõi</p></a>
+                        <a class="text" href="">Vệ Sinh An Toàn Thực Phẩm</p></a>
+                    </div>
+                    <div class="footer-item">
+                        <h3 class="text-1">TÌM CỬA HÀNG</h3>
+                        <a class="text" href=""><p>Miền Bắc</p></a>
+                        <a class="text" href=""><p>Miền Trung</p></a>
+                        <a class="text" href=""><p>Miền Nam</p></a>
+                    </div>
+                    <div class="footer-item">
+                        <h3 class="text-1">THÔNG TIN TUYỂN DỤNG</h3>
+                        <a class="text" href=""><p>Làm Việc tại Pizza Hut</p></a>
+                        <a class="text" href=""><p>Môi Trường Làm Việc</p></a>
+                        <a class="text" href="Cơ hội nghề nghiệp/Index.html"><p>Cơ Hội Nghề Nghiệp</p></a>
+                        <p class="text-1">CẦN SỰ HỖ TRỢ?</p>
+                        <a class="text" href=""><p>1900 1822</p></a>
+                    </div>
+                    <div class="footer-item">
+                        <h3 class="text-1">LIÊN HỆ VỚI PIZZA HUT</h3>
+                        <a href=""><img src="img/Fb.png" height="28px" alt=""></a>
+                        <a href=""><img src="img/youtube.png"height="28px" alt=""></a>
+                        <a href=""><img src="img/Email.png" height="28px" alt=""></a>
+
+                    </div>
+                </div>
+                <div class="line" style="height: 1px; width:90%; margin: 0 auto;"></div>
+                <div class="list-2">
+                    <div class="list-2left">
+                        <div style="display:flex;" class="list-2left1">
+                            <p>Công ty TNHH Pizza Việt Nam</p>
+                            <p style="margin-left:5px;">|Số ĐKKD: 0303902751</p>
+                        </div>
+                        <div style="margin-top: -15px;">
+                            <p>Số 1-3-5 đường D2 Khu dân cư phức hợp sông Sài Gòn, số 92 Nguyễn Hữu Cảnh, Phường 22, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam.</p>
+                        </div>
+                    </div>
+                    <div class="list-2right">
+                        <a style="text-decoration: none; color: white;" href=""><p>Điều khoản & Điều kiện</p></a>
+                        <a href=""><img src="img/đk.png" alt=""></a>
+
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</body>
+<script>
+    function closelogin() {
+        document.getElementById("login").style.display = 'none';
+
+    }
+    function openlogin() {
+        document.getElementById("login").style.display = 'flex';
+        console.log("test")
+    }
+    data1 = `
+    <input class="tab-input" placeholder="Vui lòng cho chúng tôi biết vị trí của bạn" style="width:80%;border-radius: 4px; border: 1px solid black;"/>
+    <i class="fa-regular fa-map fa-lg"></i>
+    `
+    data2 = `
+    <select style="width:40%; padding:7px">
+                <option>Thành phố</option>
+            </select>
+            
+            <select style="width:40%; padding:7px">
+                <option>Quận</option>
+            </select>
+    `
+    function change(signal){
+        if (signal){
+            document.getElementById("tab-content").innerHTML = data1;
+        }else{
+            document.getElementById("tab-content").innerHTML = data2;
+        }
+    }
+</script>
