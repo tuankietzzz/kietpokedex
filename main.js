@@ -1,5 +1,5 @@
 const box = document.getElementById('container');
-for(var i = 1 ; i<= 1024 ; i++) {
+for(var i = 1 ; i<= 200 ; i++) {
     const url = `https://pokeapi.co/api/v2/pokemon/${i}/`;
 fetch(url)
     .then( function(res) {
