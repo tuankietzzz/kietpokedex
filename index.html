@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="modalshadow" id="modalshadow"></div>
+    <div class="modalcontainer" id="modalcontainer">
+        
+        <div class="modalbox" id="modalbox">
+            <div class="topmodal">
+                <span class="gamename">Pokemon API Game</span>
+                <button class="closemodal" onclick="closeModal()"><img src="img/close.png" alt=""></button>
+            </div>
+        </div>
+        
+    </div> 
+	<div class="pagination">
+        <button onclick='prevPage()' id="btn_prev">Prev</button>
+        <button onclick="nextPage()" id="btn_next">Next</button>
+        <span>Current Page:</span> <span id="page"></span>
+    </div>
+    <div id="container" class="container">
+
+    </div>
+    
+</body>
+<script src="main.js">
+
+</script>
+</html>

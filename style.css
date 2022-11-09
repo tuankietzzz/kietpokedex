@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'VT323', monospace;
+}
+#container {
+    padding: 30px;
+}
+.card, .cardmodal {
+    float: left;
+    width: 17%;
+    min-width: 180px;
+    height: 33vh;
+    min-height: 280px;
+    margin: 20px;
+    text-align: center;
+    border: 2px solid gray;
+    transition: .3s ease;
+    cursor: pointer;
+    
+}
+.cardmodal{
+    position: fixed;
+    z-index: 2;
+}
+.card h2 {
+    font-size: 30px;
+}
+.pokestar {
+    font-size: 25px;
+}
+.card-subtitle {
+    font-size: 20px;
+}
+.card .overall {
+    font-size: 25px;
+}
+.card-image {
+    width: 40%;
+    image-rendering: pixelated;
+}
+.stats {
+    font-size: 22px;
+    display: flex;
+    justify-content: space-around;
+}
+.statsright, .statsleft {
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+button {
+    padding: 5px 20px;
+    font-size: 30px;
+    border: none;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+span {
+    font-size: 29px;
+}
+.pagination {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+button:hover {
+    background-color: rgb(140, 169, 194);
+}
+.modalshadow {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: gray;
+    opacity: 70%;
+    transform: translateY(-30px);
+    z-index: 1;
+}
+.cardmodal {
+    z-index: 2;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.topmodal {
+    opacity: 100%;
+    position: fixed;
+    left: 45%;
+    top: 30%;
+    z-index: 3;
+}
+.gamename {
+    color: aliceblue;
+}
+.closemodal img {
+    width: 30px;
+    padding: 4px;
+    
+}
+#nextbuttonmodal {
+    position: fixed;
+    top: 50%;
+    left: 110%;
+    z-index: 3;
+}
+#prevbuttonmodal {
+    position: fixed;
+    top: 50%;
+    left: -40%;
+    z-index: 3;
+}
